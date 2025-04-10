@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Selimcan Gürsu | Full Stack Web Developer">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -15,236 +14,558 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Wiky Watch | Türkiyenin İlk Akıllı Çocuk Saati</title>
-</head>
-<body>
-<div class="mobile__sidebar__wrapper">
-    <div class="mobile__sidebar__logo__area">
+  </head>
+  <body>
+    <div class="mobile__sidebar__wrapper">
+      <div class="mobile__sidebar__logo__area">
         <img src="./assets/images/wiky-logo3.svg" alt="logo">
-        <a class="mobile__sidebar__close__button"><i class="bi bi-x-lg"></i></a>
-    </div>
-    <div class="mobile__sidebar__menu__list">
+        <a class="mobile__sidebar__close__button">
+          <i class="bi bi-x-lg"></i>
+        </a>
+      </div>
+      <div class="mobile__sidebar__menu__list">
         <ul>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
-            </li>
-            <hr>
-            <li>
-               <div class="mobile__sidebar__menu">
-                  <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
-               </div>
-               <div class="mobile__sidebar__menu__list__link__dropdown">
-                   <ul>
-                      <li>
-                        <a href="">Wiky Watch 5 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5E</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4G</a>
-                      </li>
-                   </ul>
-               </div>
-            </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                         <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                        <a href="">Teknik Servis Kayıt Formu</a>
-                    </li>
-                       <li>
-                         <a href="">Teknik Servis Durum Sorgulama</a>
-                       </li>
-                       <li>
-                         <a href="">Saat Sıfırlama Talep Formu</a>
-                       </li>
-                       <li>
-                         <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
-            </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
-            </li>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Wiky Watch 5 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5E</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4G</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Teknik Servis Kayıt Formu</a>
+                </li>
+                <li>
+                  <a href="">Teknik Servis Durum Sorgulama</a>
+                </li>
+                <li>
+                  <a href="">Saat Sıfırlama Talep Formu</a>
+                </li>
+                <li>
+                  <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
-<header id="header" class="header">
-    <div class="header__top">
+    <header id="header" class="header">
+      <div class="header__top">
         <div class="header__top__social__media__area">
-            <ul>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-twitter-x"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-facebook"></i></a>
-                </li>
-            </ul>
-         </div>
+          <ul>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="header__top__main">
-            <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
+          <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
         </div>
         <div class="header__top__button__area">
-            <button>Hemen Bilgi Al</button>
+          <button>Hemen Bilgi Al</button>
         </div>
-     </div>
-     <div class="header__bottom">
+      </div>
+      <div class="header__bottom">
         <div class="header__bottom__left">
-            <div class="header__bottom__left__logo">
-                <img src="./assets/images/wiky-logo3.svg" alt="logo">
-            </div>
-            <div class="header__bottom__left__menu">
-                <ul>
+          <div class="header__bottom__left__logo">
+            <img src="./assets/images/wiky-logo3.svg" alt="logo">
+          </div>
+          <div class="header__bottom__left__menu">
+            <ul>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G Aksesuarları</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S</a>
                     </li>
-                </ul>
-            </div>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G Aksesuarları</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header__bottom__right">
-            <ul>
-                <li>
-                    <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
-                    <div class="header__bottom__right__menu__link__dropdown">
-                        <ul>
-                            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-                            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-                            <li><a href="">Wiky Watch Sıfırlama Talep Formu</a></li>
-                            <li><a href="">Ödeme Yapılacak Cihaz Sorgulama</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a></li>
-                <li><a class="header__bottom__right__menu__link" href="">Medyada Biz</a></li>
-                <li>
-                    <a class="header__bottom__right__menu__link" href=""><i class="bi bi-person-circle"></i> Hesabım</a> 
-                </li>
-                <li>
-                    <a style="font-size: 17px" class="header__bottom__right__menu__link" href=""><i class="bi bi-bag-check"></i></a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
+              <div class="header__bottom__right__menu__link__dropdown">
+                <ul>
+                  <li>
+                    <a href="">Teknik Servis Kayıt Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Teknik Servis Durum Sorgulama</a>
+                  </li>
+                  <li>
+                    <a href="">Wiky Watch Sıfırlama Talep Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Ödeme Yapılacak Cihaz Sorgulama</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Medyada Biz</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-person-circle"></i> Hesabım </a>
+            </li>
+            <li>
+              <a style="font-size: 17px" class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-bag-check"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <a class="mobile__sidebar__open__button" ><i class="bi bi-list"></i></a>
-     </div>
-</header>
-
-
-
-
-
-
-   <footer>
+        <a class="mobile__sidebar__open__button">
+          <i class="bi bi-list"></i>
+        </a>
+      </div>
+    </header>
+    <section id="home">
+      <section class="home__section__wrapper">
+        <div class="home__section">
+          <div class="home__section__main">
+            <span class="home__section__badge">Yeni Ürün</span>
+            <h3 class="home__section__title">Wiky Watch 5 Plus</h3>
+            <h4 class="home__section__featured"> Suya Toza Karşı Dayanıklı | Görüntülü Görüşme | Konum Takibi | Nabız Ölçer | Sos Butonu | Ateş Ölçer </h4>
+            <small class="home__section__description">Yeni Wiky Watch 5 Plus, geliştirilen GPS takip modülü sayesinde çocuğunuzun konumunu anlık olarak takip etmenizi sağlar. Ayrıca, yeni kamerası ve AMOLED ekranı ile daha net bir görüntü sunar. Ateş, oksijen ve nabız ölçme özellikleri de eklenmiştir.</small>
+            <button class="home__section__button">Daha Fazlasını Hemen İncele</button>
+          </div>
+          <div class="home__section__image__area">
+            <img src="./assets/images/wiky-5plus-mavi.png" alt="wiky_gorsel" class="animated-image">
+          </div>
+        </div>
+      </section>
+      <section class="home__section__wrapper">
+        <div class="home__section">
+          <div class="home__section__main">
+            <span class="home__section__badge">Popüler Ürün</span>
+            <h3 class="home__section__title">Wiky Watch 5E</h3>
+            <h4 class="home__section__featured"> Şık IPS Ekran | SOS Tuşu | Konum Takibi | Sınıf Modu | Güvenli Alan | Görüntülü Görüşme </h4>
+            <small class="home__section__description">Wiky Watch 5E , Akıllı çocuk saati dünyasında devrim yaratıyor ! Türkiye'de ilk ve tek E-SIM özellikli akıllı çocuk saati.Görüntülü görüşme dayanıklı tasarımı ve uzun pil ömrü ile her an güvende olun. Elektronik çit kayıp yönetimi ve sınıf modu gibi özellikleriyle ebevenylere tam kontrol sağlar.Hem şık hemde fonksiyonel her yaş için mükemmel bir seçim.</small>
+            <button class="home__section__button">Daha Fazlasını Hemen İncele</button>
+          </div>
+          <div class="home__section__image__area">
+            <img src="assets/images/wiky-5e-pembe.png" alt="wiky_gorsel" class="animated-image">
+          </div>
+        </div>
+      </section>
+      <section class="home__section__wrapper">
+        <div class="home__section">
+          <div class="home__section__main">
+            <span class="home__section__badge">En Çok Satan Ürün</span>
+            <h3 class="home__section__title">Wiky Watch 5E</h3>
+            <h4 class="home__section__featured"> Şık IPS Ekran | SOS Tuşu | Konum Takibi | Sınıf Modu | Güvenli Alan | Görüntülü Görüşme </h4>
+            <small class="home__section__description">Wiky Watch 5E , Akıllı çocuk saati dünyasında devrim yaratıyor ! Türkiye'de ilk ve tek E-SIM özellikli akıllı çocuk saati.Görüntülü görüşme dayanıklı tasarımı ve uzun pil ömrü ile her an güvende olun. Elektronik çit kayıp yönetimi ve sınıf modu gibi özellikleriyle ebevenylere tam kontrol sağlar.Hem şık hemde fonksiyonel her yaş için mükemmel bir seçim.</small>
+            <button class="home__section__button">Daha Fazlasını Hemen İncele</button>
+          </div>
+          <div class="home__section__image__area">
+            <img src="assets/images/wiky-4s-siyah.png" alt="wiky_gorsel" class="animated-image">
+          </div>
+        </div>
+      </section>
+      <section id="order__products__wrapper">
+        <div class="order__products">
+          <div class="order__products__top">
+            <h3 class="order__product__title">Diğer Ürünler</h3>
+            <a class="total__products__link" href="">Tüm Ürünlere Bak</a>
+          </div>
+          <div class="order__products__cards">
+            <div class="order__product__card">
+              <div class="order__product__card__main">
+                <h5 class="order__product__card__title">Wiky Watch 4S Kamuflaj Serisi</h5>
+                <div class="order__product__card__description__area">
+                  <small class="order__product__card__description">Güvenli Takip | Görüntülü Görüşme | Uzun Pil Ömrü | IPS Ekran | IP67 Sertifikası | Ateş Ölçer</small>
+                </div>
+                <div class="order__product__card__bottom">
+                  <button class="order__product__card__bottom__button">Ürünü İncele</button>
+                </div>
+              </div>
+              <div class="order__product__card__image__area">
+                <img src="assets/images/wikywatch-4s-pembe-kamuflaj.png" alt="image">
+              </div>
+            </div>
+            <div class="order__product__card">
+              <div class="order__product__card__main">
+                <h5 class="order__product__card__title">Wiky Watch 5S Akıllı Çocuk Saati </h5>
+                <div class="order__product__card__description__area">
+                  <small class="order__product__card__description">Güvenli Takip | Görüntülü Görüşme | Uzun Pil Ömrü | IPS Ekran | IP67 Sertifikası | Ateş Ölçer</small>
+                </div>
+                <div class="order__product__card__bottom">
+                  <button class="order__product__card__bottom__button">Ürünü İncele</button>
+                </div>
+              </div>
+              <div class="order__product__card__image__area">
+                <img src="assets/images/wikywatch-4s-pembe-kamuflaj.png" alt="image">
+              </div>
+            </div>
+            <div class="order__product__card">
+              <div class="order__product__card__main">
+                <h5 class="order__product__card__title">Wiky Watch Tag Serisi</h5>
+                <div class="order__product__card__description__area">
+                  <small class="order__product__card__description">Güvenli Takip | Görüntülü Görüşme | Uzun Pil Ömrü | IPS Ekran | IP67 Sertifikası | Ateş Ölçer</small>
+                </div>
+                <div class="order__product__card__bottom">
+                  <button class="order__product__card__bottom__button">Ürünü İncele</button>
+                </div>
+              </div>
+              <div class="order__product__card__image__area">
+                <img src="assets/images/wikywatch-4s-pembe-kamuflaj.png" alt="image">
+              </div>
+            </div>
+            <div class="order__product__card">
+              <div class="order__product__card__main">
+                <h5 class="order__product__card__title">Wiky Çantalar</h5>
+                <div class="order__product__card__description__area">
+                  <small class="order__product__card__description">Güvenli Takip | Görüntülü Görüşme | Uzun Pil Ömrü | IPS Ekran | IP67 Sertifikası | Ateş Ölçer</small>
+                </div>
+                <div class="order__product__card__bottom">
+                  <button class="order__product__card__bottom__button">Ürünü İncele</button>
+                </div>
+              </div>
+              <div class="order__product__card__image__area">
+                <img src="assets/images/wikywatch-4s-pembe-kamuflaj.png" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mobile__app__wrapper">
+        <div class="mobile__app__area">
+          <h2>Wiky Watch Uygulama Görüntüleri</h2>
+          <small>Uygulama ile çocuğunuzu takip edebilir,mesaj bırakabilir, arayabilir ve daha bir çok özelliği kullanabilirsiniz.</small>
+        </div>
+        <div class="splide app__splide" role="group" aria-label="Wiky Watch Screenshots">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-1.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-2.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-3.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-4.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-5.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-6.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/uygulama-7.webp" alt="Wiky Watch Screenshot 1">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="webform__wrapper">
+        <div class="webform__container">
+          <div class="webform__images">
+            <div class="webform__image__first">
+              <img src="https://cdn5.wikywatch.com.tr/uploads/elementor/thumbs/Wiky-Watch-Elektronik-Cit-1-r2cymnk149qswyaylbduurjjpgo2gc2bno41mfikca.jpg" alt="image">
+            </div>
+            <div class="webform__image__second">
+              <img src="https://cdn5.wikywatch.com.tr/uploads/elementor/thumbs/8-e1739882872370-r1os4izk0g7luook8ql2ibylhsb26cvfeccaq2va0q.jpg" alt="image">
+              <img src="https://cdn2.wikywatch.com.tr/uploads/elementor/thumbs/Akilli-Cocuk-Saatleri-Kac-Yas-Icin-Uygun-Wiky-Watch-e1741777860932-r2qyiqd92k56iitu9yqe2ogpjcj66hx0opxfdt1h8a.jpg" alt="image">
+            </div>
+          </div>
+          <div class="webform__main">
+            <div class="webform__main__top">
+              <h3>Hemen Bilgi Al ! İndirim Fırsatını Kaçırmayın!</h3>
+              <p>
+                <strong>Wiky Watch</strong> şimdi büyük indirimlerle sizleri bekliyor! ile sevdiklerinize hem güvenli hem şık bir hediye verin. Bu fırsatı kaçırmayın, sadece formu doldurun ve anında indirim kazanın!
+              </p>
+              <p>Hemen şimdi formu doldurun, size özel teklifler ve ürünler hakkında detaylı bilgi alarak avantajlardan yararlanın!</p>
+              <p>
+                <strong>Hızlı ve Kolay: Formu doldurduktan sonra, sizin için en uygun saat modelleri hakkında bilgilendirileceksiniz.</strong>
+              </p>
+            </div>
+            <div class="webform__main__bottom">
+              <form action="">
+                <input type="text" placeholder="İsim Soyisim" required>
+                <input type="text" placeholder="Telefon Numarası" required>
+                <select required>
+                  <option value="">Ürün Seçiniz.</option>
+                </select>
+                <button type="submit">Gönder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blogs__wrapper">
+        <div class="blogs__area">
+          <h2>Wiky Watch Bilgi Bankası</h2>
+          <small>Wiky Watch Bilgi Bankası, Ürün özellikleri, kullanım ipuçları, bakım önerileri ve daha fazlası burada sizleri bekliyor.</small>
+        </div>
+        <div class="splide blog__splide" role="group" aria-label="Wiky Watch Screenshots">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn1.wikywatch.com.tr/uploads/elementor/thumbs/Akilli-Cocuk-Saatlerinde-Dikkat-Edilmesi-Gerekenler-2-r34zxtof0rupmhfxpw5uq7m3038nex65m2avb6zvy2.jpg" alt="Wiky Watch Blog 1">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saati Kullanırken Karşılaşılan En Yaygın Sorunlar ve Çözümler</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn1.wikywatch.com.tr/uploads/elementor/thumbs/Akilli-Cocuk-Saati-Satin-Alma-Rehberi-r34z054m4hqtlid8ec14dplgp195ldgezcqi88xqwq.jpg" alt="Wiky Watch Screenshot 2">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saati Satın Alma Rehberi</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn2.wikywatch.com.tr/uploads/elementor/thumbs/Akilli-Cocuk-Saatleri-Kac-Yas-Icin-Uygun-Wiky-Watch-e1741777860932-r2qyiqd92k56iitu9yqe2ogpjcj66hx0opxfdt1h8a.jpg" alt="Wiky Watch Screenshot 3">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saatleri Kaç Yaş İçin Uygun ?</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn5.wikywatch.com.tr/uploads/elementor/thumbs/Wiky-Watch-Elektronik-Cit-1-r2cymnk149qswyaylbduurjjpgo2gc2bno41mfikca.jpg" alt="Wiky Watch Screenshot 4">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saati Elektornik Çit Rehberi</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn2.wikywatch.com.tr/uploads/elementor/thumbs/5-1-e1740491396958-r211h3zvnyhftdmm2nzbqwiyyni1glg57j2yi4ph16.jpg" alt="Wiky Watch Screenshot 5">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saati Hangi Yaş İçin Uygundur ?</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn5.wikywatch.com.tr/uploads/elementor/thumbs/8-e1739882872370-r1os4izk0g7luook8ql2ibylhsb26cvfeccaq2va0q.jpg" alt="Wiky Watch Screenshot 6">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saatlerinin Sağlık Takip Özellikleri</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn2.wikywatch.com.tr/uploads/elementor/thumbs/5plus-kurulum-cover-qvjnov60qvqg9jtittydlpa4zv9lz1czkieywbgiuy.jpg" alt="Wiky Watch Screenshot 7">
+                  <div class="splide__slide__main">
+                    <small>Wiky Watch 5 Plus Detaylı Saat Kurulumu</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn1.wikywatch.com.tr/uploads/elementor/thumbs/apara-meltem-derbazlar-quc4l2fhfarczqwxgsjlv161w1k05sjvs8hhp3q456.jpg" alt="Wiky Watch Screenshot 7">
+                  <div class="splide__slide__main">
+                    <small>CNN Türk Ana Haber Wiky Watch Akıllı Saat</small>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="">
+                  <img src="https://cdn2.wikywatch.com.tr/uploads/elementor/thumbs/gaJVjooOXsY-hd-qtj3m1gys55ck2ne5rf4u29d84y6q3mgzcajfltx8a.jpg" alt="Wiky Watch Screenshot 7">
+                  <div class="splide__slide__main">
+                    <small>Akıllı Çocuk Saati Kullanırken Karşılaşılan En Yaygın Sorunlar ve Çözümler</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="sales__points">
+        <div class="sales__points__area">
+          <h2>Wiky Watch Satış Noktaları</h2>
+          <small>Wiky Watch, Tüm Türkiye'deki seçkin satış noktalarında sizlerle buluşuyor. Hemen en yakın satış noktanızı keşfedin!</small>
+        </div>
+        <div class="splide sales__splide" role="group" aria-label="Wiky Watch Screenshots">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/hepsiburada.png" alt="Wiky Watch Screenshot 1">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/beymen.png" alt="Wiky Watch Screenshot 2">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/media-markt.png" alt="Wiky Watch Screenshot 3">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/nezih.png" alt="Wiky Watch Screenshot 4">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/dr.png" alt="Wiky Watch Screenshot 5">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/amazon.png" alt="Wiky Watch Screenshot 6">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/n11.png" alt="Wiky Watch Screenshot 7">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/teknosa.png" alt="Wiky Watch Screenshot 7">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2024/01/trendyol.png" alt="Wiky Watch Screenshot 7">
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.wikywatch.com.tr/wp-content/uploads/2025/03/vodafone-logo.png" alt="Wiky Watch Screenshot 7">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
       <div class="footer-container">
         <div class="footer-section">
           <h4>Firma Bilgileri</h4>
           <ul>
-            <li>
-              Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1
-              İstanbul/Üsküdar - Altunizade
-            </li>
+            <li> Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1 İstanbul/Üsküdar - Altunizade </li>
             <li>Telefon: (0216) 345 9360</li>
             <li>Email: info@wikywatch.com</li>
             <li>Çalışma Saatleri: 09:00 - 18:00</li>
@@ -253,31 +574,61 @@
         <div class="footer-section">
           <h4>Wiky Modelleri</h4>
           <ul>
-            <li><a href="">Wiky Watch 5 Plus</a></li>
-            <li><a href="">Wiky Watch 5E</a></li>
-            <li><a href="">Wiky Watch 4S</a></li>
-            <li><a href="">Wiky Tag</a></li>
-            <li><a href="">Wiky Watch 4G</a></li>
+            <li>
+              <a href="">Wiky Watch 5 Plus</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 5E</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4S</a>
+            </li>
+            <li>
+              <a href="">Wiky Tag</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4G</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Destek</h4>
           <ul>
-            <li><a href="">Sık Sorulan Sorular</a></li>
-            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-            <li><a href="">Teknik Servis Ödeme Sorgulama</a></li>
-            <li><a href="">Wiky Saat Sıfırlama Formu</a></li>
+            <li>
+              <a href="">Sık Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Durum Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Kayıt Formu</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Ödeme Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Wiky Saat Sıfırlama Formu</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Hakkımızda</h4>
           <ul>
-            <li><a href="">Hakkımızda </a></li>
-            <li><a href="">İletişim</a></li>
-            <li><a href="">Gizlilik Politikası</a></li>
-            <li><a href="">Mesafeli Satış Sözleşmesi</a></li>
-            <li><a href="">İade Politikası</a></li>
+            <li>
+              <a href="">Hakkımızda </a>
+            </li>
+            <li>
+              <a href="">İletişim</a>
+            </li>
+            <li>
+              <a href="">Gizlilik Politikası</a>
+            </li>
+            <li>
+              <a href="">Mesafeli Satış Sözleşmesi</a>
+            </li>
+            <li>
+              <a href="">İade Politikası</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -285,31 +636,74 @@
         <p>&copy; 2025 Wiky Watch. Tüm hakları saklıdır.</p>
       </div>
     </footer>
-<script>
-    $(document).ready(function() {
+    <script>
+      $(document).ready(function() {
         const sidebar = $('.mobile__sidebar__wrapper');
         const openButton = $('.mobile__sidebar__open__button');
         const closeButton = $('.mobile__sidebar__close__button');
-    
         // Sidebar açma
         openButton.on('click', function() {
-            sidebar.addClass('active');
+          sidebar.addClass('active');
         });
-    
         // Sidebar kapama
         closeButton.on('click', function() {
-            sidebar.removeClass('active');
+          sidebar.removeClass('active');
         });
-    
         // Sidebar içindeki Menü Dropdownları Açma/Kapama
         $('.mobile__sidebar__menu').on('click', function() {
-            const dropdown = $(this).next();
-            if (dropdown.length) {
-                dropdown.toggleClass('active');
-            }
+          const dropdown = $(this).next();
+          if (dropdown.length) {
+            dropdown.toggleClass('active');
+          }
         });
-    });
+      });
+      // Mobile App Slider
+      var splide = new Splide('.app__splide', {
+        type: 'loop',
+        perPage: 5,
+        perMove: 1,
+        gap: '100px',
+        breakpoints: {
+          1024: {
+            perPage: 2,
+          },
+          768: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
+      // Blog / Bilgi Bankası Slider 
+      var splide = new Splide('.blog__splide', {
+        type: 'loop',
+        perPage: 5,
+        perMove: 1,
+        gap: '100px',
+        breakpoints: {
+          1024: {
+            perPage: 2,
+          },
+          768: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
+      var splide = new Splide('.sales__splide', {
+        type: 'loop',
+        perPage: 5,
+        perMove: 1,
+        gap: '100px',
+        breakpoints: {
+          1024: {
+            perPage: 2,
+          },
+          768: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
     </script>
-    
-</body>
+  </body>
 </html>
