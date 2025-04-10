@@ -3772,8 +3772,100 @@ a.active {
 }
 
 /**! TEKNİK SERVİS FORMU SAYFASI :: SON **/
+/** TEKNİK SERVİS SIFIRLAMA FORMU **/
+#reset__form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 15px;
+}
 
+#reset__form__wrapper .reset__form__title {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+}
 
+#reset__form__wrapper .reset__form__area {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+#reset__form__wrapper .reset__form__area .form__group {
+    margin-bottom: 20px;
+}
+
+#reset__form__wrapper .reset__form__area .form__group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#reset__form__wrapper .reset__form__area .form__group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+#reset__form__wrapper .reset__form__area .form__group input:focus {
+    border-color: #007bff;
+}
+
+#resetFormButton {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+#resetFormButton:hover {
+    background-color: #007bffdd;
+}
+
+@media (max-width: 768px) {
+    #reset__form__wrapper {
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+
+    #reset__form__wrapper .reset__form__title {
+        font-size: 1.4rem;
+    }
+
+    #reset__form__wrapper .reset__form__area {
+        padding: 20px;
+    }
+
+    #reset__form__wrapper .reset__form__area .form__group input {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    #resetFormButton {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
+
+/** TEKNİK SERVİS SIFIRLAMA FORMU SAYFASI :: SON **/
 
 
 
