@@ -2653,7 +2653,93 @@ td {
 }
 /**! HAKKIMIZDA SAYFASI :: SON **/
 
+/** SIKÇA SORULAN SORULAR SAYFASI :: BAŞLANGIÇ **/
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
 
+.faqanswer {
+    display: none;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.faqanswer p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+.togglefaq {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+}
+
+.togglefaq:hover {
+    background-color: #f0f0f0;
+}
+
+.togglefaq i {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon-plus {
+    color: #5ec4cd;
+}
+
+.icon-minus {
+    color: #f44336;
+    transform: rotate(45deg);
+}
+
+.faq__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .faq__title {
+        font-size: 26px;
+    }
+
+    .togglefaq {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .faqanswer {
+        padding: 15px;
+    }
+}
+
+/** SIKÇA SORULAN SORULAR SAYFASI :: SON **/
 
 
 
