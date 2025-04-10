@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Selimcan Gürsu | Full Stack Web Developer">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -15,323 +14,356 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style.css">
     <title>Wiky Watch | Türkiyenin İlk Akıllı Çocuk Saati</title>
-</head>
-<body>
-<div class="mobile__sidebar__wrapper">
-    <div class="mobile__sidebar__logo__area">
+  </head>
+  <body>
+    <div class="mobile__sidebar__wrapper">
+      <div class="mobile__sidebar__logo__area">
         <img src="assets/images/wiky-logo3.svg" alt="logo">
-        <a class="mobile__sidebar__close__button"><i class="bi bi-x-lg"></i></a>
-    </div>
-    <div class="mobile__sidebar__menu__list">
+        <a class="mobile__sidebar__close__button">
+          <i class="bi bi-x-lg"></i>
+        </a>
+      </div>
+      <div class="mobile__sidebar__menu__list">
         <ul>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
-            </li>
-            <hr>
-            <li>
-               <div class="mobile__sidebar__menu">
-                  <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
-               </div>
-               <div class="mobile__sidebar__menu__list__link__dropdown">
-                   <ul>
-                      <li>
-                        <a href="">Wiky Watch 5 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5E</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4G</a>
-                      </li>
-                   </ul>
-               </div>
-            </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                         <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                        <a href="">Teknik Servis Kayıt Formu</a>
-                    </li>
-                       <li>
-                         <a href="">Teknik Servis Durum Sorgulama</a>
-                       </li>
-                       <li>
-                         <a href="">Saat Sıfırlama Talep Formu</a>
-                       </li>
-                       <li>
-                         <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
-            </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
-            </li>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Wiky Watch 5 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5E</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4G</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Teknik Servis Kayıt Formu</a>
+                </li>
+                <li>
+                  <a href="">Teknik Servis Durum Sorgulama</a>
+                </li>
+                <li>
+                  <a href="">Saat Sıfırlama Talep Formu</a>
+                </li>
+                <li>
+                  <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
-<header id="header" class="header">
-    <div class="header__top">
+    <header id="header" class="header">
+      <div class="header__top">
         <div class="header__top__social__media__area">
-            <ul>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-twitter-x"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-facebook"></i></a>
-                </li>
-            </ul>
-         </div>
+          <ul>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="header__top__main">
-            <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
+          <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
         </div>
         <div class="header__top__button__area">
-            <button>Hemen Bilgi Al</button>
+          <button>Hemen Bilgi Al</button>
         </div>
-     </div>
-     <div class="header__bottom">
+      </div>
+      <div class="header__bottom">
         <div class="header__bottom__left">
-            <div class="header__bottom__left__logo">
-                <img src="assets/images/wiky-logo3.svg" alt="logo">
-            </div>
-            <div class="header__bottom__left__menu">
-                <ul>
+          <div class="header__bottom__left__logo">
+            <img src="assets/images/wiky-logo3.svg" alt="logo">
+          </div>
+          <div class="header__bottom__left__menu">
+            <ul>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G Aksesuarları</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S</a>
                     </li>
-                </ul>
-            </div>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G Aksesuarları</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header__bottom__right">
-            <ul>
-                <li>
-                    <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
-                    <div class="header__bottom__right__menu__link__dropdown">
-                        <ul>
-                            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-                            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-                            <li><a href="">Wiky Watch Sıfırlama Talep Formu</a></li>
-                            <li><a href="">Ödeme Yapılacak Cihaz Sorgulama</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a></li>
-                <li><a class="header__bottom__right__menu__link" href="">Medyada Biz</a></li>
-                <li>
-                    <a class="header__bottom__right__menu__link" href=""><i class="bi bi-person-circle"></i> Hesabım</a> 
-                </li>
-                <li>
-                    <a style="font-size: 17px" class="header__bottom__right__menu__link" href=""><i class="bi bi-bag-check"></i></a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
+              <div class="header__bottom__right__menu__link__dropdown">
+                <ul>
+                  <li>
+                    <a href="">Teknik Servis Kayıt Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Teknik Servis Durum Sorgulama</a>
+                  </li>
+                  <li>
+                    <a href="">Wiky Watch Sıfırlama Talep Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Ödeme Yapılacak Cihaz Sorgulama</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Medyada Biz</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-person-circle"></i> Hesabım </a>
+            </li>
+            <li>
+              <a style="font-size: 17px" class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-bag-check"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <a class="mobile__sidebar__open__button" ><i class="bi bi-list"></i></a>
-     </div>
-</header>
-
-
-
-<section id="account" class="account">
-    <div class="account__wrapper">
+        <a class="mobile__sidebar__open__button">
+          <i class="bi bi-list"></i>
+        </a>
+      </div>
+    </header>
+    <section id="account" class="account">
+      <div class="account__wrapper">
         <div class="account__menu">
-            <ul>
-                <li><a href="javascript:void(0);" onclick="showSection('account-info')"><i class="bi bi-person"></i> Hesap Detayları</a></li>
-                <li><a href="javascript:void(0);" onclick="showSection('orders-info')"><i class="bi bi-archive"></i> Siparişlerim</a></li>
-                <li><a href="javascript:void(0);" onclick="showSection('change-password-info')"><i class="bi bi-gear"></i> Şifremi Değiştir</a></li>
-                <li>
-                    <a href=""><i class="bi bi-box-arrow-in-right"></i> Çıkış Yap</a>       
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="javascript:void(0);" onclick="showSection('account-info')">
+                <i class="bi bi-person"></i> Hesap Detayları </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="showSection('orders-info')">
+                <i class="bi bi-archive"></i> Siparişlerim </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" onclick="showSection('change-password-info')">
+                <i class="bi bi-gear"></i> Şifremi Değiştir </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bi bi-box-arrow-in-right"></i> Çıkış Yap </a>
+            </li>
+          </ul>
         </div>
         <div class="account__main">
-            <div id="account-info" class="account__info active">
-                <h2>Hesap Detayları</h2>
-                 <form>
-                    <label style="font-size: 12px;font-weight:bold" for="">İsim Soyisim:</label>
-                    <input type="text"  id="name" placeholder="İsim Soyisim">
-                    <label  style="font-size: 12px;font-weight:bold"  for="">E-Posta Adresi:</label>
-                    <input type="email"  id="email" placeholder="E-Posta Adresi">
-                    <label  style="font-size: 12px;font-weight:bold"  for="">Telefon Numarası:</label>
-                    <input type="tel" id="phone" placeholder="Telefon Numarası">
-                    <label  style="font-size: 12px;font-weight:bold"  for="">Adres Bilgisi:</label>
-                    <input type="text" id="address" placeholder="Adres">
-                    <label  style="font-size: 12px;font-weight:bold"  for="">Posta Kodu:</label>
-                    <input type="text" id="postal_code" placeholder="Posta Kodu">
-                    <label  style="font-size: 12px;font-weight:bold"  for="">Şehir:</label>
-                    <select id="city_id">
-                        <option value="">Şehir Seçiniz.</option>
-                        <option value="1">İstanbul</option>
-                        <option value="2">Samsun</option>
-                    </select>
-                    <label  style="font-size: 12px;font-weight:bold"  for="">İlçe:</label>
-                    <select id="district_id">
-                        <option value="">İlçe Seçiniz.</option>
-                        <option value="1">Ümraniye</option>
-                        <option value="2">Bafra</option>
-                    </select>
-                    <button type="button" id="userAccountUpdateBtn" class="update-btn">Güncelle</button>
-                 </form>
-            </div>
-            <div id="orders-info" class="orders__info">
-                <h2>Siparişlerim</h2>
-                <table class="orders-table">
-                    <thead>
-                        <tr>
-                            <th>Sipariş Numarası</th>
-                            <th>Tarih</th>
-                            <th>Ürün Adı</th>
-                            <th>Adet</th>
-                            <th>Durum</th>
-                            <th>Toplam Fiyat</th>
-                            <th>Aksiyon</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#12345</td>
-                            <td>01/01/2025</td>
-                            <td>Örnek Ürün</td>
-                            <td>2</td>
-                            <td>Gönderildi</td>
-                            <td>₺200,00</td>
-                            <td><button class="view-btn">Detaylar</button></td>
-                        </tr>
-                        <tr>
-                            <td>#12346</td>
-                            <td>02/01/2025</td>
-                            <td>Diğer Ürün</td>
-                            <td>1</td>
-                            <td>Beklemede</td>
-                            <td>₺150,00</td>
-                            <td><button class="view-btn">Detaylar</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="change-password-info" class="change__password__info">
-                <h2>Şifrenizi Değiştirin</h2>
-                 <form>
-                    <input type="password" id="new_password" placeholder="Yeni Parola">
-                    <input type="password" id="repeat_new_password" placeholder="Yeni Parola Tekrar">
-                    <button type="button" id="update-password-btn" class="update-btn">Güncelle</button>
-                 </form>
-            </div>
+          <div id="account-info" class="account__info active">
+            <h2>Hesap Detayları</h2>
+            <form>
+              <label style="font-size: 12px;font-weight:bold" for="">İsim Soyisim:</label>
+              <input type="text" id="name" placeholder="İsim Soyisim">
+              <label style="font-size: 12px;font-weight:bold" for="">E-Posta Adresi:</label>
+              <input type="email" id="email" placeholder="E-Posta Adresi">
+              <label style="font-size: 12px;font-weight:bold" for="">Telefon Numarası:</label>
+              <input type="tel" id="phone" placeholder="Telefon Numarası">
+              <label style="font-size: 12px;font-weight:bold" for="">Adres Bilgisi:</label>
+              <input type="text" id="address" placeholder="Adres">
+              <label style="font-size: 12px;font-weight:bold" for="">Posta Kodu:</label>
+              <input type="text" id="postal_code" placeholder="Posta Kodu">
+              <label style="font-size: 12px;font-weight:bold" for="">Şehir:</label>
+              <select id="city_id">
+                <option value="">Şehir Seçiniz.</option>
+                <option value="1">İstanbul</option>
+                <option value="2">Samsun</option>
+              </select>
+              <label style="font-size: 12px;font-weight:bold" for="">İlçe:</label>
+              <select id="district_id">
+                <option value="">İlçe Seçiniz.</option>
+                <option value="1">Ümraniye</option>
+                <option value="2">Bafra</option>
+              </select>
+              <button type="button" id="userAccountUpdateBtn" class="update-btn">Güncelle</button>
+            </form>
+          </div>
+          <div id="orders-info" class="orders__info">
+            <h2>Siparişlerim</h2>
+            <table class="orders-table">
+              <thead>
+                <tr>
+                  <th>Sipariş Numarası</th>
+                  <th>Tarih</th>
+                  <th>Ürün Adı</th>
+                  <th>Adet</th>
+                  <th>Durum</th>
+                  <th>Toplam Fiyat</th>
+                  <th>Aksiyon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#12345</td>
+                  <td>01/01/2025</td>
+                  <td>Örnek Ürün</td>
+                  <td>2</td>
+                  <td>Gönderildi</td>
+                  <td>₺200,00</td>
+                  <td>
+                    <button class="view-btn">Detaylar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#12346</td>
+                  <td>02/01/2025</td>
+                  <td>Diğer Ürün</td>
+                  <td>1</td>
+                  <td>Beklemede</td>
+                  <td>₺150,00</td>
+                  <td>
+                    <button class="view-btn">Detaylar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="change-password-info" class="change__password__info">
+            <h2>Şifrenizi Değiştirin</h2>
+            <form>
+              <input type="password" id="new_password" placeholder="Yeni Parola">
+              <input type="password" id="repeat_new_password" placeholder="Yeni Parola Tekrar">
+              <button type="button" id="update-password-btn" class="update-btn">Güncelle</button>
+            </form>
+          </div>
         </div>
-    </div>
-</section>
-
-
-   <footer>
+      </div>
+    </section>
+    <footer>
       <div class="footer-container">
         <div class="footer-section">
           <h4>Firma Bilgileri</h4>
           <ul>
-            <li>
-              Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1
-              İstanbul/Üsküdar - Altunizade
-            </li>
+            <li> Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1 İstanbul/Üsküdar - Altunizade </li>
             <li>Telefon: (0216) 345 9360</li>
             <li>Email: info@wikywatch.com</li>
             <li>Çalışma Saatleri: 09:00 - 18:00</li>
@@ -340,31 +372,61 @@
         <div class="footer-section">
           <h4>Wiky Modelleri</h4>
           <ul>
-            <li><a href="">Wiky Watch 5 Plus</a></li>
-            <li><a href="">Wiky Watch 5E</a></li>
-            <li><a href="">Wiky Watch 4S</a></li>
-            <li><a href="">Wiky Tag</a></li>
-            <li><a href="">Wiky Watch 4G</a></li>
+            <li>
+              <a href="">Wiky Watch 5 Plus</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 5E</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4S</a>
+            </li>
+            <li>
+              <a href="">Wiky Tag</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4G</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Destek</h4>
           <ul>
-            <li><a href="">Sık Sorulan Sorular</a></li>
-            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-            <li><a href="">Teknik Servis Ödeme Sorgulama</a></li>
-            <li><a href="">Wiky Saat Sıfırlama Formu</a></li>
+            <li>
+              <a href="">Sık Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Durum Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Kayıt Formu</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Ödeme Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Wiky Saat Sıfırlama Formu</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Hakkımızda</h4>
           <ul>
-            <li><a href="">Hakkımızda </a></li>
-            <li><a href="">İletişim</a></li>
-            <li><a href="">Gizlilik Politikası</a></li>
-            <li><a href="">Mesafeli Satış Sözleşmesi</a></li>
-            <li><a href="">İade Politikası</a></li>
+            <li>
+              <a href="">Hakkımızda </a>
+            </li>
+            <li>
+              <a href="">İletişim</a>
+            </li>
+            <li>
+              <a href="">Gizlilik Politikası</a>
+            </li>
+            <li>
+              <a href="">Mesafeli Satış Sözleşmesi</a>
+            </li>
+            <li>
+              <a href="">İade Politikası</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -372,42 +434,31 @@
         <p>&copy; 2025 Wiky Watch. Tüm hakları saklıdır.</p>
       </div>
     </footer>
-<script>
-
-
-    function showSection(sectionId) {
-    $('.account__info, .orders__info, .change__password__info').removeClass('active');
-    $('#' + sectionId).addClass('active');
-    };
-    $(document).ready(function() {
-
-
+    <script>
+      function showSection(sectionId) {
+        $('.account__info, .orders__info, .change__password__info').removeClass('active');
+        $('#' + sectionId).addClass('active');
+      };
+      $(document).ready(function() {
         const sidebar = $('.mobile__sidebar__wrapper');
         const openButton = $('.mobile__sidebar__open__button');
         const closeButton = $('.mobile__sidebar__close__button');
-    
         // Sidebar açma
         openButton.on('click', function() {
-            sidebar.addClass('active');
+          sidebar.addClass('active');
         });
-    
         // Sidebar kapama
         closeButton.on('click', function() {
-            sidebar.removeClass('active');
+          sidebar.removeClass('active');
         });
-    
         // Sidebar içindeki Menü Dropdownları Açma/Kapama
         $('.mobile__sidebar__menu').on('click', function() {
-            const dropdown = $(this).next();
-            if (dropdown.length) {
-                dropdown.toggleClass('active');
-            }
+          const dropdown = $(this).next();
+          if (dropdown.length) {
+            dropdown.toggleClass('active');
+          }
         });
-
-
-
-    });
+      });
     </script>
-    
-</body>
+  </body>
 </html>
