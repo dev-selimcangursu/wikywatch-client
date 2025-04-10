@@ -3603,7 +3603,175 @@ a.active {
 }
 
 /**! TEKNİK SERVİS DURUM SORGULAMA SAYFASI :: SON **/
+/**! TEKNİK SERVİS FORMU SAYFASI :: BAŞLANGIÇ **/
+#registration-form {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
 
+#registration-form .registration__form__title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#registration-form .form__wrapper {
+    padding: 20px;
+    border-top: 2px solid #f1f1f1;
+}
+
+#registration-form .form__wrapper .form-group {
+    margin-bottom: 20px;
+}
+
+#registration-form .form__wrapper .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#registration-form .form__wrapper .form-group input,
+#registration-form .form__wrapper .form-group select,
+#registration-form .form__wrapper .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#registration-form .form__wrapper .form-group input:focus,
+#registration-form .form__wrapper .form-group select:focus,
+#registration-form .form__wrapper .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#registration-form .form__wrapper .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#registration-form .form__wrapper .form-group .checkbox__area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#registration-form .form__wrapper .form-group .checkbox__area .checkbox_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+#registration-form
+    .form__wrapper
+    .form-group
+    .checkbox__area
+    .checkbox_box
+    img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+#registration-form
+    .form__wrapper
+    .form-group
+    .checkbox__area
+    .checkbox_box
+    span {
+    font-size: 12px !important;
+}
+
+#registration-form
+    .form__wrapper
+    .form-group
+    .checkbox__area
+    .checkbox_box
+    input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#registration-form .form__wrapper .form__description__wrapper {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#registration-form .form__wrapper .form__description__wrapper ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#registration-form .form__wrapper .form__description__wrapper ul li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#registration-form .form__wrapper .form__description__wrapper ul li::before {
+    content: "• ";
+    color: #007bff;
+    margin-right: 8px;
+}
+
+#createRegistrationButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 14px;
+}
+
+#createRegistrationButton:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    #registration-form
+        .form__wrapper
+        .form-group
+        .checkbox__area
+        .checkbox__area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #registration-form
+        .form__wrapper
+        .form-group
+        .checkbox__area
+        .checkbox_box {
+        justify-content: flex-start;
+    }
+
+    #registration-form {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #registration-form .registration__form__title {
+        font-size: 20px;
+    }
+}
+
+/**! TEKNİK SERVİS FORMU SAYFASI :: SON **/
 
 
 
