@@ -230,27 +230,28 @@
         <a class="mobile__sidebar__open__button" ><i class="bi bi-list"></i></a>
      </div>
 </header>
-<section id="login__wrapper">
-    <h3 class="login__global__text">Ödeme seçeneklerini hızlandırmak için oturum açın.</h3>
-    <div class="login__area">
-        <p class="login__text">Wiky Watch'da oturum açın</p>
+
+
+<section id="register__wrapper">
+    <h3 class="register__global__text">Wiky Watch Hesabınızı Oluşturun.</h3>
+    <div class="register__area">
+        <p class="register__text">Tüm Wiky Watch hizmetlerine erişmek için tek ihtiyacınız olan bir Wiky Watch Hesabı.</p>
         <form method="POST" action="">
+            <input type="text" id="name" name="name" placeholder="İsim Soyisim" required>
             <input type="email" id="email" name="email" placeholder="E-Posta Adresi" required>
             <input type="password" id="password" name="password" placeholder="Parola" required>
-            <button id="loginButton" type="submit">Giriş Yap</button>
-            <div class="form__options">
-                <label>
-                    <input id="remember_me" name="remember" type="checkbox"> Beni hatırla
-                </label>
-                <a href="">Parolayı mı Unuttunuz?</a>
-            </div>
-            <small class="dont__have__account">Wiky Watch Hesabınız yok mu? <a class="dont__have__account__link" href="">Şimdi Oluşturun</a></small>
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Parola Tekrarı" required>
+            <button id="registerButton" type="submit">Kayıt Ol</button>
+            <small class="have__account">Wiky Watch Hesabınız Var Mı ? <a class="have__account__link" href="">Hemen Giriş Yapın</a></small>
         </form>
     </div>
-    <div class="login__wrapper__bottom">
+    <div class="register__wrapper__bottom">
         <p>Daha fazla yardıma mı ihtiyacınız var? <a href="">Hemen sohbet edin </a> veya 00800 448 829 873 numaralı telefonu arayın.</p>
     </div>
 </section>
+
+
+
    <footer>
       <div class="footer-container">
         <div class="footer-section">
