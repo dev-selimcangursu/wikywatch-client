@@ -3203,8 +3203,91 @@ a.active {
 }
 
 /**! ACCOUNT SAYFASI CSS :: SON **/
+/** BLOG SAYFASI ::BAŞLANGIÇ **/
+#blogs {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
 
+#blogs .blogs__top {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
 
+#blogs .blogs__top .blogs__top__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+#blogs .blogs__top .blogs__top__description {
+    font-size: 15px;
+    color: #666666;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#blogs .blog__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#blogs .blog__list a {
+    text-decoration: none !important;
+}
+
+#blogs .blog__list .blog__card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#blogs .blog__list .blog__card:hover {
+    transform: translateY(-5px);
+}
+
+#blogs .blog__list .blog__card .blog__card__header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#blogs .blog__list .blog__card .blog__card__body {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #blogs .blogs__top .blogs__top__title {
+        font-size: 28px;
+    }
+
+    #blogs .blogs__top .blogs__top__description {
+        font-size: 14px;
+    }
+
+    #blogs .blog__list {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
+}
+
+/** BLOG SAYFASI ::SON **/
 
 
 
