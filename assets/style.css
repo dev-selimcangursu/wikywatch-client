@@ -2808,7 +2808,87 @@ a.active {
 }
 
 /** GİZLİLİK SÖZLEŞMESİ SAYFASI :: SON **/
+/**! SATIŞ SÖZLEŞMESİ SAYFASI :: BAŞLANGIÇ **/
+.agreement-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.agreement-container .agreement-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.agreement-container .agreement-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.agreement-container .agreement-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.agreement-container .agreement-content {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.agreement-container .agreement-content p {
+    margin-bottom: 15px;
+}
+
+.agreement-container .agreement-content strong {
+    font-weight: bold;
+    color: #222;
+}
+
+.agreement-container .agreement-content .agreement-signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.agreement-container .agreement-content .agreement-signature .signature {
+    width: 48%;
+}
+
+.agreement-container .agreement-content .agreement-signature .signature p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.agreement-container
+    .agreement-content
+    .agreement-signature
+    .signature
+    p:last-child {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .agreement-container {
+        width: 95%;
+    }
+
+    .agreement-container .agreement-container .agreement-signatures {
+        flex-direction: column;
+    }
+
+    .signature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/**! SATIŞ SÖZLEŞMESİ SAYFASI :: SON **/
 
 
 
