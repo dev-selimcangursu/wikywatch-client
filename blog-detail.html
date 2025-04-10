@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Selimcan Gürsu | Full Stack Web Developer">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -15,265 +14,286 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style.css">
     <title>Wiky Watch | Türkiyenin İlk Akıllı Çocuk Saati</title>
-</head>
-<body>
-<div class="mobile__sidebar__wrapper">
-    <div class="mobile__sidebar__logo__area">
+  </head>
+  <body>
+    <div class="mobile__sidebar__wrapper">
+      <div class="mobile__sidebar__logo__area">
         <img src="assets/images/wiky-logo3.svg" alt="logo">
-        <a class="mobile__sidebar__close__button"><i class="bi bi-x-lg"></i></a>
-    </div>
-    <div class="mobile__sidebar__menu__list">
+        <a class="mobile__sidebar__close__button">
+          <i class="bi bi-x-lg"></i>
+        </a>
+      </div>
+      <div class="mobile__sidebar__menu__list">
         <ul>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
-            </li>
-            <hr>
-            <li>
-               <div class="mobile__sidebar__menu">
-                  <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
-               </div>
-               <div class="mobile__sidebar__menu__list__link__dropdown">
-                   <ul>
-                      <li>
-                        <a href="">Wiky Watch 5 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5E</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 5S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4S</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4 Plus</a>
-                      </li>
-                      <li>
-                        <a href="">Wiky Watch 4G</a>
-                      </li>
-                   </ul>
-               </div>
-            </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                         <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
-                       </li>
-                       <li>
-                         <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <div class="mobile__sidebar__menu">
-                   <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
-                </div>
-                <div class="mobile__sidebar__menu__list__link__dropdown">
-                    <ul>
-                       <li>
-                        <a href="">Teknik Servis Kayıt Formu</a>
-                    </li>
-                       <li>
-                         <a href="">Teknik Servis Durum Sorgulama</a>
-                       </li>
-                       <li>
-                         <a href="">Saat Sıfırlama Talep Formu</a>
-                       </li>
-                       <li>
-                         <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
-                       </li>
-                    </ul>
-                </div>
-             </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
-            </li>
-            <hr>
-            <li>
-                <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
-            </li>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Anasayfa</a>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Akıllı Saatler</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Wiky Watch 5 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5E</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 5S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4S</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4 Plus</a>
+                </li>
+                <li>
+                  <a href="">Wiky Watch 4G</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Aksesuar Mağazası</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="/products/wiky-watch-5plus-aksesuar">Wiky Watch 5 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5e-aksesuar">Wiky Watch 5E Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-5s-aksesuar">Wiky Watch 5S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4s-aksesuar">Wiky Watch 4S Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4plus-aksesuar">Wiky Watch 4 Plus Aksesuarları</a>
+                </li>
+                <li>
+                  <a href="/products/wiky-watch-4g-aksesuar">Wiky Watch 4G Aksesuarları</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <div class="mobile__sidebar__menu">
+              <a class="mobile__sidebar__menu__list__link" href="#">Teknik Servis</a>
+            </div>
+            <div class="mobile__sidebar__menu__list__link__dropdown">
+              <ul>
+                <li>
+                  <a href="">Teknik Servis Kayıt Formu</a>
+                </li>
+                <li>
+                  <a href="">Teknik Servis Durum Sorgulama</a>
+                </li>
+                <li>
+                  <a href="">Saat Sıfırlama Talep Formu</a>
+                </li>
+                <li>
+                  <a href="">Ödeme Yapılacak Cihaz Sorgula</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Bilgi Bankası</a>
+          </li>
+          <hr>
+          <li>
+            <a class="mobile__sidebar__menu__list__link" href="">Medyada Biz</a>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
-<header id="header" class="header">
-    <div class="header__top">
+    <header id="header" class="header">
+      <div class="header__top">
         <div class="header__top__social__media__area">
-            <ul>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-twitter-x"></i></a>
-                </li>
-                <li>
-                    <a href="" class="header__top__social__media__icon"><i class="bi bi-facebook"></i></a>
-                </li>
-            </ul>
-         </div>
+          <ul>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="header__top__social__media__icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="header__top__main">
-            <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
+          <span class="header__top__main__text">Türkiyenin İlk Akıllı Çocuk Saati !</span>
         </div>
         <div class="header__top__button__area">
-            <button>Hemen Bilgi Al</button>
+          <button>Hemen Bilgi Al</button>
         </div>
-     </div>
-     <div class="header__bottom">
+      </div>
+      <div class="header__bottom">
         <div class="header__bottom__left">
-            <div class="header__bottom__left__logo">
-                <img src="assets/images/wiky-logo3.svg" alt="logo">
-            </div>
-            <div class="header__bottom__left__menu">
-                <ul>
+          <div class="header__bottom__left__logo">
+            <img src="assets/images/wiky-logo3.svg" alt="logo">
+          </div>
+          <div class="header__bottom__left__menu">
+            <ul>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Anasayfa</a>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Akıllı Saatler</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E</a>
                     </li>
                     <li>
-                        <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
-                        <div class="header__bottom__left__menu__link__dropdown">
-                            <ul>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5E Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 5S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4S Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4 Plus Aksesuarları</a>
-                                </li>
-                                <li>
-                                    <a class="header__bottom__left__menu__link__dropdown__link"  href="">Wiky Watch 4G Aksesuarları</a>
-                                </li>
-                            </ul>
-                        </div>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S</a>
                     </li>
-                </ul>
-            </div>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="header__bottom__left__menu__link" href="">Aksesuar Mağazası</a>
+                <div class="header__bottom__left__menu__link__dropdown">
+                  <ul>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5E Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 5S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4S Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4 Plus Aksesuarları</a>
+                    </li>
+                    <li>
+                      <a class="header__bottom__left__menu__link__dropdown__link" href="">Wiky Watch 4G Aksesuarları</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header__bottom__right">
-            <ul>
-                <li>
-                    <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
-                    <div class="header__bottom__right__menu__link__dropdown">
-                        <ul>
-                            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-                            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-                            <li><a href="">Wiky Watch Sıfırlama Talep Formu</a></li>
-                            <li><a href="">Ödeme Yapılacak Cihaz Sorgulama</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a></li>
-                <li><a class="header__bottom__right__menu__link" href="">Medyada Biz</a></li>
-                <li>
-                    <a class="header__bottom__right__menu__link" href=""><i class="bi bi-person-circle"></i> Hesabım</a> 
-                </li>
-                <li>
-                    <a style="font-size: 17px" class="header__bottom__right__menu__link" href=""><i class="bi bi-bag-check"></i></a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a class="header__bottom__right__menu__link" href="#">Teknik Servis</a>
+              <div class="header__bottom__right__menu__link__dropdown">
+                <ul>
+                  <li>
+                    <a href="">Teknik Servis Kayıt Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Teknik Servis Durum Sorgulama</a>
+                  </li>
+                  <li>
+                    <a href="">Wiky Watch Sıfırlama Talep Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Ödeme Yapılacak Cihaz Sorgulama</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Bilgi Bankası</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">Medyada Biz</a>
+            </li>
+            <li>
+              <a class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-person-circle"></i> Hesabım </a>
+            </li>
+            <li>
+              <a style="font-size: 17px" class="header__bottom__right__menu__link" href="">
+                <i class="bi bi-bag-check"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <a class="mobile__sidebar__open__button" ><i class="bi bi-list"></i></a>
-     </div>
-</header>
-<section id="blog__detail">
-    <div class="blog__detail__container">
+        <a class="mobile__sidebar__open__button">
+          <i class="bi bi-list"></i>
+        </a>
+      </div>
+    </header>
+    <section id="blog__detail">
+      <div class="blog__detail__container">
         <div class="blog__detail__image">
-            <img src="https://cdn5.wikywatch.com.tr/uploads/2025/02/8-e1739882872370.jpg.webp" alt="Blog Image" class="img-fluid">
+          <img src="https://cdn5.wikywatch.com.tr/uploads/2025/02/8-e1739882872370.jpg.webp" alt="Blog Image" class="img-fluid">
         </div>
         <div class="blog__detail__description__main">
-            <h1>Akıllı Çocuk Saatlerinin Sağlık Takip Özellikleri</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse totam vero eveniet fugiat, culpa quaerat, maiores ut repudiandae dolores, voluptate animi. Aut dolor magni excepturi, magnam repudiandae quidem natus laborum! Aspernatur, possimus soluta aperiam eveniet eos quis optio. Voluptatem consequuntur doloremque esse quis aspernatur in, unde voluptatum itaque quod aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, quibusdam! Amet voluptatem sed aut atque non quos autem, repudiandae nobis ducimus delectus animi culpa harum iste in totam earum nam perferendis assumenda nostrum sequi, vero porro! Quia quis et assumenda dolorem iste, repellat ex quibusdam id, accusamus sequi dolore voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores atque temporibus cupiditate dolore corrupti culpa magnam nam deserunt iusto repellat maxime, aspernatur expedita aperiam error veniam possimus labore provident! Perferendis, exercitationem quisquam quo doloribus, quos, ad debitis nihil architecto odit adipisci repellendus minima in ex. Aut earum nulla nostrum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta asperiores magnam reiciendis. Animi rerum explicabo reprehenderit, laborum natus quod ducimus aut nisi necessitatibus tenetur veniam sequi accusantium sed corrupti?</p>
-
-            <div class="blog__detail__section">
-                <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
-                <div class="blog__detail__description__image">
-                    <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
-                </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi esse eos ipsa neque officia facere ab fugiat vitae? Veniam, dicta. Soluta placeat excepturi suscipit sunt quas animi corporis iste voluptas consectetur saepe, unde itaque pariatur atque, dicta est odio vel ea illo nam consequatur error, tenetur porro molestiae perferendis. Nisi harum porro nesciunt dignissimos sequi, aperiam repudiandae quae optio, fugit fuga nam culpa ducimus quam quod natus accusamus deserunt ex laboriosam quaerat dolore odio, ratione modi quos rerum. Architecto blanditiis, a nihil soluta ullam id reprehenderit delectus accusamus doloremque? Debitis neque quasi, amet nihil dicta aut dolorum cumque est molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat repellendus alias, perspiciatis adipisci sint laborum, odit minima autem, ducimus eius officiis quae ut blanditiis quia id quasi debitis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+          <h1>Akıllı Çocuk Saatlerinin Sağlık Takip Özellikleri</h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse totam vero eveniet fugiat, culpa quaerat, maiores ut repudiandae dolores, voluptate animi. Aut dolor magni excepturi, magnam repudiandae quidem natus laborum! Aspernatur, possimus soluta aperiam eveniet eos quis optio. Voluptatem consequuntur doloremque esse quis aspernatur in, unde voluptatum itaque quod aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, quibusdam! Amet voluptatem sed aut atque non quos autem, repudiandae nobis ducimus delectus animi culpa harum iste in totam earum nam perferendis assumenda nostrum sequi, vero porro! Quia quis et assumenda dolorem iste, repellat ex quibusdam id, accusamus sequi dolore voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores atque temporibus cupiditate dolore corrupti culpa magnam nam deserunt iusto repellat maxime, aspernatur expedita aperiam error veniam possimus labore provident! Perferendis, exercitationem quisquam quo doloribus, quos, ad debitis nihil architecto odit adipisci repellendus minima in ex. Aut earum nulla nostrum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta asperiores magnam reiciendis. Animi rerum explicabo reprehenderit, laborum natus quod ducimus aut nisi necessitatibus tenetur veniam sequi accusantium sed corrupti?</p>
+          <div class="blog__detail__section">
+            <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
+            <div class="blog__detail__description__image">
+              <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
             </div>
-
-            <div class="blog__detail__section">
-                <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
-                <div class="blog__detail__description__image">
-                    <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quam nisi provident ut odit corrupti ad quisquam non veritatis sapiente in laborum commodi temporibus nemo soluta iusto quos numquam, necessitatibus dolor. Deleniti ut optio dolorum iste cupiditate. Delectus dolorem molestiae ipsam magnam possimus dolorum assumenda. Voluptatem asperiores maxime reiciendis facere beatae molestias cum commodi recusandae quia quis officia, cupiditate ipsam autem iusto ad perferendis quidem maiores eligendi! In laboriosam deserunt impedit cupiditate commodi numquam. Ex recusandae laboriosam exercitationem, dolores incidunt illo ipsum saepe veniam minima, fuga temporibus error ducimus sunt eum assumenda atque dolore molestias nihil nisi. Iusto, natus tempore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut praesentium beatae officia nesciunt enim consequuntur libero, ducimus temporibus. Beatae repudiandae culpa quod dignissimos consequuntur nisi? Aut delectus totam quaerat laudantium magnam autem, dicta architecto voluptate consequuntur cumque repellendus pariatur necessitatibus officia et inventore nostrum. Magni voluptates quasi aut velit sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi esse eos ipsa neque officia facere ab fugiat vitae? Veniam, dicta. Soluta placeat excepturi suscipit sunt quas animi corporis iste voluptas consectetur saepe, unde itaque pariatur atque, dicta est odio vel ea illo nam consequatur error, tenetur porro molestiae perferendis. Nisi harum porro nesciunt dignissimos sequi, aperiam repudiandae quae optio, fugit fuga nam culpa ducimus quam quod natus accusamus deserunt ex laboriosam quaerat dolore odio, ratione modi quos rerum. Architecto blanditiis, a nihil soluta ullam id reprehenderit delectus accusamus doloremque? Debitis neque quasi, amet nihil dicta aut dolorum cumque est molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat repellendus alias, perspiciatis adipisci sint laborum, odit minima autem, ducimus eius officiis quae ut blanditiis quia id quasi debitis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+          </div>
+          <div class="blog__detail__section">
+            <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
+            <div class="blog__detail__description__image">
+              <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
             </div>
-
-            <div class="blog__detail__section">
-                <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
-                <div class="blog__detail__description__image">
-                    <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe dolorem a accusamus, soluta nam dolorum neque reprehenderit cupiditate et exercitationem quaerat possimus error ipsam consectetur impedit mollitia aspernatur unde ipsum ex! Quidem quibusdam rerum rem adipisci animi, repudiandae beatae deserunt sapiente autem reiciendis dolore iusto quae quam culpa in ad officiis. Recusandae ratione velit ipsam neque obcaecati dolorem aliquam quod possimus magnam! Quaerat sint autem enim! Quis iste accusantium ipsum consectetur pariatur libero ipsa quidem ad animi harum corporis officia impedit nesciunt numquam porro quae cum fugit vitae, quaerat beatae aspernatur ab quos voluptate delectus. Tempora ex harum magni sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati sunt vero id laboriosam dolorem eius fugit ipsam, ratione libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quam nisi provident ut odit corrupti ad quisquam non veritatis sapiente in laborum commodi temporibus nemo soluta iusto quos numquam, necessitatibus dolor. Deleniti ut optio dolorum iste cupiditate. Delectus dolorem molestiae ipsam magnam possimus dolorum assumenda. Voluptatem asperiores maxime reiciendis facere beatae molestias cum commodi recusandae quia quis officia, cupiditate ipsam autem iusto ad perferendis quidem maiores eligendi! In laboriosam deserunt impedit cupiditate commodi numquam. Ex recusandae laboriosam exercitationem, dolores incidunt illo ipsum saepe veniam minima, fuga temporibus error ducimus sunt eum assumenda atque dolore molestias nihil nisi. Iusto, natus tempore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut praesentium beatae officia nesciunt enim consequuntur libero, ducimus temporibus. Beatae repudiandae culpa quod dignissimos consequuntur nisi? Aut delectus totam quaerat laudantium magnam autem, dicta architecto voluptate consequuntur cumque repellendus pariatur necessitatibus officia et inventore nostrum. Magni voluptates quasi aut velit sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+          </div>
+          <div class="blog__detail__section">
+            <h5>Nabız Ölçer ile Kalp Ritminin Takibi</h5>
+            <div class="blog__detail__description__image">
+              <img src="https://cdn2.wikywatch.com.tr/uploads/2025/02/Wiky-Watch-5Plus-Nabiz-Olcer-1-e1739883420882.jpg.webp" alt="Heart Rate Monitor" class="img-fluid">
             </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe dolorem a accusamus, soluta nam dolorum neque reprehenderit cupiditate et exercitationem quaerat possimus error ipsam consectetur impedit mollitia aspernatur unde ipsum ex! Quidem quibusdam rerum rem adipisci animi, repudiandae beatae deserunt sapiente autem reiciendis dolore iusto quae quam culpa in ad officiis. Recusandae ratione velit ipsam neque obcaecati dolorem aliquam quod possimus magnam! Quaerat sint autem enim! Quis iste accusantium ipsum consectetur pariatur libero ipsa quidem ad animi harum corporis officia impedit nesciunt numquam porro quae cum fugit vitae, quaerat beatae aspernatur ab quos voluptate delectus. Tempora ex harum magni sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati sunt vero id laboriosam dolorem eius fugit ipsam, ratione libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquam vero reiciendis, consectetur fugiat assumenda, dolorem aut itaque dolor fugit at incidunt adipisci doloremque voluptatem ea a ipsam debitis et!</p>
+          </div>
         </div>
-    </div>
-</section>
-   <footer>
+      </div>
+    </section>
+    <footer>
       <div class="footer-container">
         <div class="footer-section">
           <h4>Firma Bilgileri</h4>
           <ul>
-            <li>
-              Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1
-              İstanbul/Üsküdar - Altunizade
-            </li>
+            <li> Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1 İstanbul/Üsküdar - Altunizade </li>
             <li>Telefon: (0216) 345 9360</li>
             <li>Email: info@wikywatch.com</li>
             <li>Çalışma Saatleri: 09:00 - 18:00</li>
@@ -282,31 +302,61 @@
         <div class="footer-section">
           <h4>Wiky Modelleri</h4>
           <ul>
-            <li><a href="">Wiky Watch 5 Plus</a></li>
-            <li><a href="">Wiky Watch 5E</a></li>
-            <li><a href="">Wiky Watch 4S</a></li>
-            <li><a href="">Wiky Tag</a></li>
-            <li><a href="">Wiky Watch 4G</a></li>
+            <li>
+              <a href="">Wiky Watch 5 Plus</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 5E</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4S</a>
+            </li>
+            <li>
+              <a href="">Wiky Tag</a>
+            </li>
+            <li>
+              <a href="">Wiky Watch 4G</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Destek</h4>
           <ul>
-            <li><a href="">Sık Sorulan Sorular</a></li>
-            <li><a href="">Teknik Servis Durum Sorgulama</a></li>
-            <li><a href="">Teknik Servis Kayıt Formu</a></li>
-            <li><a href="">Teknik Servis Ödeme Sorgulama</a></li>
-            <li><a href="">Wiky Saat Sıfırlama Formu</a></li>
+            <li>
+              <a href="">Sık Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Durum Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Kayıt Formu</a>
+            </li>
+            <li>
+              <a href="">Teknik Servis Ödeme Sorgulama</a>
+            </li>
+            <li>
+              <a href="">Wiky Saat Sıfırlama Formu</a>
+            </li>
           </ul>
         </div>
         <div class="footer-section">
           <h4>Hakkımızda</h4>
           <ul>
-            <li><a href="">Hakkımızda </a></li>
-            <li><a href="">İletişim</a></li>
-            <li><a href="">Gizlilik Politikası</a></li>
-            <li><a href="">Mesafeli Satış Sözleşmesi</a></li>
-            <li><a href="">İade Politikası</a></li>
+            <li>
+              <a href="">Hakkımızda </a>
+            </li>
+            <li>
+              <a href="">İletişim</a>
+            </li>
+            <li>
+              <a href="">Gizlilik Politikası</a>
+            </li>
+            <li>
+              <a href="">Mesafeli Satış Sözleşmesi</a>
+            </li>
+            <li>
+              <a href="">İade Politikası</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -314,31 +364,27 @@
         <p>&copy; 2025 Wiky Watch. Tüm hakları saklıdır.</p>
       </div>
     </footer>
-<script>
-    $(document).ready(function() {
+    <script>
+      $(document).ready(function() {
         const sidebar = $('.mobile__sidebar__wrapper');
         const openButton = $('.mobile__sidebar__open__button');
         const closeButton = $('.mobile__sidebar__close__button');
-    
         // Sidebar açma
         openButton.on('click', function() {
-            sidebar.addClass('active');
+          sidebar.addClass('active');
         });
-    
         // Sidebar kapama
         closeButton.on('click', function() {
-            sidebar.removeClass('active');
+          sidebar.removeClass('active');
         });
-    
         // Sidebar içindeki Menü Dropdownları Açma/Kapama
         $('.mobile__sidebar__menu').on('click', function() {
-            const dropdown = $(this).next();
-            if (dropdown.length) {
-                dropdown.toggleClass('active');
-            }
+          const dropdown = $(this).next();
+          if (dropdown.length) {
+            dropdown.toggleClass('active');
+          }
         });
-    });
+      });
     </script>
-    
-</body>
+  </body>
 </html>
